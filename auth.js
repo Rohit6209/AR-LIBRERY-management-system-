@@ -1,5 +1,5 @@
 // middleware/auth.js
-require('dotenv').config();
+require('dotenv')config();
 
 function verifyAdmin(req, res, next) {
   const pwd = req.headers['x-admin-password'] || req.body?.adminPassword;
