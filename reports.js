@@ -1,7 +1,7 @@
 // routes/reports.js
 const express = require('express');
 const router  = express.Router();
-const db      = require('../config/db');
+const db      = require('./config/db');
 
 // GET dashboard stats
 router.get('/dashboard', async (req, res) => {
