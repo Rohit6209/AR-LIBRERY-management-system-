@@ -2,7 +2,7 @@
 const express = require('express');
 const router  = express.Router();
 const db      = require('./config/db');
-const { verifyAdmin } = require('../middleware/auth');
+const { verifyAdmin } = require('./middleware/auth');
 
 // GET all members
 router.get('/', async (req, res) => {
