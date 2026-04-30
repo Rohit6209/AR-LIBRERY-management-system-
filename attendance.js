@@ -1,7 +1,7 @@
 // routes/attendance.js
 const express = require('express');
 const router  = express.Router();
-const db      = require('../config/db');
+const db      = require('./config/db');
 
 // GET attendance by date
 router.get('/', async (req, res) => {
