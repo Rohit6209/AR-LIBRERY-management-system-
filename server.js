@@ -46,13 +46,13 @@ app.use('/uploads', express.static(uploadDir));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // ── Routes ────────────────────────────────────
-app.use('/api/members',    require('./routes/members'));
-app.use('/api/fees',       require('./routes/fees'));
-app.use('/api/attendance', require('./routes/attendance'));
-app.use('/api/notices',    require('./routes/notices'));
-app.use('/api/expenses',   require('./routes/expenses'));
-app.use('/api/salary',     require('./routes/salary'));
-app.use('/api/reports',    require('./routes/reports'));
+app.use('/api/members',    require('./members'));
+app.use('/api/fees',       require('./fees'));
+app.use('/api/attendance', require('./attendance'));
+app.use('/api/notices',    require('./notices'));
+app.use('/api/expenses',   require('./expenses'));
+app.use('/api/salary',     require('./salary'));
+app.use('/api/reports',    require('./reports'));
 
 // ── Health check ──────────────────────────────
 app.get('/api/health', (req, res) => {
