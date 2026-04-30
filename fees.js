@@ -1,8 +1,8 @@
 // routes/fees.js
 const express = require('express');
 const router  = express.Router();
-const db      = require('../config/db');
-const { verifyAdmin } = require('../middleware/auth');
+const db      = require('./config/db');
+const { verifyAdmin } = require('./middleware/auth');
 
 // GET all fee records
 router.get('/', async (req, res) => {
